@@ -3,10 +3,12 @@ package com.alineavila.jornadamilhas.depoimento;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
+import java.sql.Blob;
+
 public record DadosAtualizacaoDepoimento(
         @NotNull
         Long id,
-        String foto,
+        byte[] foto,
         String depoimento,
         String autor
 ) {
