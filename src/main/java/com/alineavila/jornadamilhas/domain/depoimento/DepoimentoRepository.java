@@ -1,4 +1,4 @@
-package com.alineavila.jornadamilhas.depoimento;
+package com.alineavila.jornadamilhas.domain.depoimento;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

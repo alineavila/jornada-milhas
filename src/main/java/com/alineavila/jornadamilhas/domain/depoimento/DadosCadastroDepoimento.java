@@ -1,4 +1,4 @@
-package com.alineavila.jornadamilhas.depoimento;
+package com.alineavila.jornadamilhas.domain.depoimento;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.EqualsAndHashCode;

@@ -1,4 +1,4 @@
-package com.alineavila.jornadamilhas.depoimento;
+package com.alineavila.jornadamilhas.domain.depoimento;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -10,7 +10,6 @@ import lombok.Setter;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.sql.Blob;
 
 @Entity
 @Table(name="depoimentos")
