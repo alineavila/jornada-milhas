@@ -24,9 +24,9 @@ public class DepoimentoController {
 
     @PostMapping
     @Transactional
-    public ResponseEntity cadastrar(@RequestPart("foto") MultipartFile foto,
-                                    @RequestPart("depoimento") String depoimento,
-                                    @RequestPart("autor") String autor,
+    public ResponseEntity cadastrar(@RequestParam("foto") MultipartFile foto,
+                                    @RequestParam("depoimento") String depoimento,
+                                    @RequestParam("autor") String autor,
                                     UriComponentsBuilder uriBuilder) throws IOException {
         var depoimentoASalvar = new Depoimento(foto,depoimento,autor);
         repository.save(depoimentoASalvar);

@@ -11,3 +11,4 @@ Finalizando haverá uma integração de IA na aplicação.
 
 - [Figma do projeto](https://www.figma.com/proto/1qD4hmpnvxoeHRC1cbWKgR/Challenge-Escola-de-Programa%C3%A7%C3%A3o?type=design&node-id=34-537&scaling=min-zoom&page-id=0%3A1)
 - [Trello - Semana 1](https://trello.com/b/l6mJuHsb/challenge-backend-semana-1)
+- [Trello - Semana 2](https://trello.com/b/Il6WI5yT/challeng-backend-semana-2)
