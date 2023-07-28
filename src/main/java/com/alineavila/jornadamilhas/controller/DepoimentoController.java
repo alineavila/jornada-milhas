@@ -61,7 +61,8 @@ public class DepoimentoController {
     }
 
     @GetMapping("/depoimentos-home")
-    public ResponseEntity listarHome(@PageableDefault(size = 3) Pageable pageable) {
+    public ResponseEntity
+    listarHome(@PageableDefault(size = 3) Pageable pageable) {
 
         var page = repository.buscarRegistrosRandomComLimitTres(pageable);
         return ResponseEntity.ok(page);

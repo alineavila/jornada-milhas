@@ -58,4 +58,15 @@ public class DestinoController {
         repository.delete(destino);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/destinos")
+    public ResponseEntity encontrarPorNome(Pageable pageable,
+                                           @RequestParam("nome") String nome) {
+        var destinoPage = repository.findByNomeIgnoreCase(pageable, nome);
+        if (destinoPage.hasContent()) {
+            return ResponseEntity.ok(destinoPage);
+        } else {
+            return ResponseEntity.ok("mensagem: Nenhum destino foi encontrado");
+        }
+    }
 }
