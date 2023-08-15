@@ -2,11 +2,16 @@ package com.alineavila.jornadamilhas.domain.destino;
 
 import java.math.BigDecimal;
 
-public record DadosDetalhamentoDestino(byte[] foto,
-                                       String nome,
-                                       BigDecimal preco) {
+public record DadosDetalhamentoDestino(
+        byte[] foto1,
+        byte[] foto2,
+        String nome,
 
-    public DadosDetalhamentoDestino(Destino destino){
-        this(destino.getFoto(), destino.getNome(), destino.getPreco());
+        BigDecimal preco,
+        String meta,
+        String descricao) {
+
+    public DadosDetalhamentoDestino(Destino destino) {
+        this(destino.getFoto1(), destino.getFoto2(), destino.getNome(), destino.getPreco(), destino.getMeta(), destino.getDescricao());
     }
 }

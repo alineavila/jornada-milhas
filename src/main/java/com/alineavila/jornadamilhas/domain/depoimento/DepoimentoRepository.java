@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface DepoimentoRepository extends JpaRepository<Depoimento, Long> {
 
+
     @Query(value = "SELECT obj FROM Depoimento obj ORDER BY FUNCTION ('RAND')")
     public Page<Depoimento> buscarRegistrosRandomComLimitTres (Pageable pageable);
 }

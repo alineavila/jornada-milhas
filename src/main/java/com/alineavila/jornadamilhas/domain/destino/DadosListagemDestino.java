@@ -11,12 +11,16 @@ import java.math.BigDecimal;
 public record DadosListagemDestino(
 
         Long id,
-        byte[] foto,
+        byte[] foto1,
+        byte[] foto2,
         String nome,
-        BigDecimal preco
+        BigDecimal preco,
+        String meta,
+        String descricao
 ) {
 
     public DadosListagemDestino(Destino destino) {
-        this(destino.getId(), destino.getFoto(), destino.getNome(), destino.getPreco());
+        this(destino.getId(), destino.getFoto1(), destino.getFoto2(), destino.getNome(),
+                destino.getPreco(), destino.getMeta(), destino.getDescricao());
     }
 }

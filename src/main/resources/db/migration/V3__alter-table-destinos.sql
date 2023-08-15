@@ -1,0 +1,12 @@
+ALTER TABLE DESTINOS
+RENAME COLUMN foto to foto1;
+
+ALTER TABLE DESTINOS
+ADD foto2 LONGBLOB not null;
+
+ALTER TABLE DESTINOS
+ADD meta varchar (255) not null;
+
+ALTER TABLE DESTINOS
+ADD descricao varchar(2000);
+
